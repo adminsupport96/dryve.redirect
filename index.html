@@ -116,14 +116,6 @@
             redirectUrl = config[site]
         }
                 
-        
-        // Set the URL in the display
-        document.getElementById('destinationUrl').textContent = redirectUrl;
-        
-        // Make the URL clickable
-        document.getElementById('destinationUrl').innerHTML = 
-            `<a href="${redirectUrl}" style="color: #4a6ee0; text-decoration: none;">${redirectUrl}</a>`;
-        
         // Redirect after 1 second
         window.location.href = redirectUrl;
         // setTimeout(() => {
@@ -133,6 +125,7 @@
 </body>
 
 </html>
+
 
 
 
